@@ -1,1 +1,34 @@
+nav {
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 0;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img {
+    width: auto;
+    height: 22px;
+    opacity: 1;
+}
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    opacity: 1;
+    text-decoration: none;
+    color: rgb(110, 108, 108)
+}
+
+nav a:hover{
+    color:black
+}

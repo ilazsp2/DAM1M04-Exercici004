@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 400;
@@ -12,7 +12,7 @@
   font-display: swap;
   src: url(jetbrains-mono-500.ttf) format('truetype');
 }
-@font-face {
+a {
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 300;
