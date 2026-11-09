@@ -1,1 +1,21 @@
-
+.footer{
+    background-color: black;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+.footer a{
+    color: grey;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a:hover{
+    color: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
