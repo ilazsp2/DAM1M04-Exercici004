@@ -1,5 +1,5 @@
 nav {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.99);
     left: 0;
     position: sticky;
     top: 0;
@@ -9,6 +9,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid rgb(156, 156, 156);
 }
 
 .nav-inner {
@@ -16,6 +17,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 66px;
+    margin-left: 350px;
 }
 .nav-inner img {
     padding: 32px;
@@ -45,6 +47,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 14px;
+    margin-right: 350px;
 }
 
 .cajatext {
@@ -79,3 +82,78 @@ nav {
     text-decoration: none;
 }
 
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 80% 15%, #f3dce8, transparent 60%),
+    radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%),
+    #fbfbfa;
+}
+
+.hero-graph {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+  mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+}
+
+.hero-graph canvas {
+  display: block;
+  background: transparent;
+  pointer-events: none;
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
+  margin-left: 20%;
+  margin-right: 35%;
+}
+
+.container h1 {
+    font-size: 80px;
+}
+
+.container p {
+    font-size: 25px;
+    font-weight: 100;
+    color:rgb(96, 96, 96)
+}
+
+.a-sec1 .apro{
+    text-decoration: none;
+    color: black;
+    gap:20px;
+}
+
+.a-sec1 .apro:hover {
+    border-bottom: 1px solid;
+}
+
+.hero .accent {
+    background: linear-gradient(90deg, #82B84F 0%, /* lime */ #2EB872 10%, /* green */ #2FB7B5 20%, /* teal */ #2486E8 30%, /* blue */ #0B5BD3 40%, /* deep blue */ #A63EE8 50%, /* violet */ #B83ACA 60%, /* magenta */ #E85494 70%, /* pink */ #F57975 80%, /* coral */ #FC9F5B 90%, /* orange */ #FFB051 95%, /* amber */ #82B84F 100% /* loop back to lime */);
+    background-size: 300% 100%;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: stratacycle 14s linear infinite;
+    position: relative;
+    white-space: nowrap;
+}
+
+.hero-image {
+    margin-top: 80px;
+    border: 1px solid;
+    border-radius: 14px;
+}
+
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+  .hero-graph {
+    display: none;
+  }
+}

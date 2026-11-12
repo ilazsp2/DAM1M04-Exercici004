@@ -12,14 +12,14 @@
   font-display: swap;
   src: url(jetbrains-mono-500.ttf) format('truetype');
 }
-a, span {
+a, span, p {
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: url(plus-jakarta-sans-300.ttf) format('truetype');
 }
-@font-face {
+h1, h2, h3{
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 400;
