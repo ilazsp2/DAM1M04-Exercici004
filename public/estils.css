@@ -1,0 +1,132 @@
+.footer{
+    background-color: black;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+.footer a{
+    color: grey;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a:hover{
+    color: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.book {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.ver_plataforma {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid transparent;
+    line-height: 1;
+    text-wrap: nowrap;
+    text-decoration: none;
+    color: black;
+    transition: border-color .2s;
+}
+.ver_plataforma:hover {
+    border-bottom-color: black;
+    transition: transform .15s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
+
+}
+.ver_plataforma::after{
+    content: '→';
+    display: inline-block;
+    margin-left: 6px;
+    transition: transform .2s;
+}
+.ver_plataforma:hover::after{
+    transform: translateX(2px);
+}
+.gs{
+    padding: 120px 150px;
+    background:
+        radial-gradient(
+            circle at left center,
+            rgba(190,220,255,.4),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at right bottom,
+            rgba(255,180,190,.3),
+            transparent 30%
+        ),
+        #f7f6f3;
+}
+.gs_title{
+    font-size: 25.5px;
+    display: block;
+    unicode-bidi: isolate;
+    font-size: clamp(60px, 6vw, 90px);
+    line-height: 1.05;
+    font-weight: 500;
+    color: black;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+.gs_title_azul{
+    background: linear-gradient(
+        90deg,
+        #34d399,
+        #3b82f6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gs_subtitle{
+    font-size: clamp(18px, 1.5vw, 22px);
+    color: rgb(77, 76, 76);
+    max-width: 640px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.gs_info{
+    display:flex;
+    justify-content:space-between;
+    margin-top:50px;
+    gap:40px;
+    border-top: 1px solid #ddd;
+    padding-top: 35px;
+}
+.gs_info h4{
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #888;
+    font-weight: 600;
+}
+.gs_info div{
+    flex: 1;
+}
+.gs_barra{
+    width: 24px;
+    height: 4px;
+    border-radius: 999px;
+
+    background: linear-gradient(
+        90deg,
+        #51d46f,
+        #3498ff
+    );
+
+    margin-bottom: 12px;
+}
