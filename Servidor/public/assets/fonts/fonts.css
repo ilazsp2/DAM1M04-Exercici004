@@ -19,7 +19,7 @@ a, span, p {
   font-display: swap;
   src: url(plus-jakarta-sans-300.ttf) format('truetype');
 }
-h1, h2, h3 {
+h1, h2, h3,h4 {
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 400;
