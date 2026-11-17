@@ -287,8 +287,102 @@ nav {
     padding: 120px 150px;
 }
 
+.plat h2 {
+    margin-bottom: 28px;
+    font-size: 40px;
+}
+
 span {
     color: rgb(110, 108, 108);
+}
+
+.targetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 14px;
+  line-height: 22.4px;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.targetas > .element {
+  color: rgb(96, 96, 96);
+  min-width: 30px;
+  flex: 1 1 200px;
+}
+
+.element > .at {
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    line-height: 16.8px;
+    text-align: center;
+    border: 1px solid rgb(166, 250, 163);
+    background: linear-gradient(rgb(166, 250, 163), rgb(255,255,255));
+}
+
+.element > .nex {
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    line-height: 16.8px;
+    text-align: center;
+    border: 1px solid rgb(164, 163, 250);
+    background: linear-gradient(rgb(164, 163, 250), rgb(255,255,255));
+}
+
+.element > .can {
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    line-height: 16.8px;
+    text-align: center;
+    border: 1px solid rgb(223, 173, 252);
+    background: linear-gradient(rgb(223, 173, 252), rgb(255,255,255));
+}
+
+.element p {
+    font-size: 15px;
+}
+.element h3 {
+    font-size: 30px;
+}
+.targetas .black {
+    color: #000;
+}
+
+.targetas > .core {
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    line-height: 16.8px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(197, 197, 197);
+    background: linear-gradient(rgb(197, 197, 197), rgb(255,255,255));
+    color: rgb(96, 96, 96);
+    min-width: 30px;
+    flex: 1 1 200px;
+    gap: 32px
+}
+
+.core h3{
+    font-size: 22px
+}
+
+.core p{
+    font-size: 15px;
 }
 
 @media (max-width: 767px), (prefers-reduced-motion: reduce) {
