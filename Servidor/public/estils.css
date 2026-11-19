@@ -938,8 +938,115 @@ span {
     color: rgb(96, 96, 96);
 }
 
-@media (max-width: 767px), (prefers-reduced-motion: reduce) {
-  .hero-graph {
-    display: none;
-  }
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .nav-links{
+        padding: 0;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cajitas{
+        flex-direction: column;
+    }
+
+    .hero,
+    .plat,
+    .atlas,
+    .gs{
+        padding: 80px 20px;
+    }
+
+    .workflows,
+    .governance{
+        padding: 80px 20px;
+    }
+
+    .container h1{
+        font-size: 3rem;
+    }
+
+    .container p{
+        font-size: 1.1rem;
+    }
+
+    .field{
+        flex-direction: column;
+        gap: 40px;
+        padding: 80px 20px;
+    }
+
+    .field h2{
+        font-size: 4rem;
+    }
+
+    .field-card{
+        width: 100%;
+    }
+
+    .mensaje{
+        padding: 40px 20px;
+        font-size: 1.5rem;
+    }
+
+    .work_title,
+    .atlas h2,
+    .gov-title{
+        font-size: 3rem;
+        letter-spacing: 0;
+    }
+
+    .work_subtitle,
+    .gov-subtitle{
+        font-size: 1.2rem;
+    }
+
+    .workflow-item{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .workflow-arrow{
+        opacity: 1;
+        margin-left: 0;
+    }
+
+    .atlas-steps{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .step p{
+        max-width: 100%;
+    }
+
+    .gov-cards{
+        flex-direction: column;
+    }
+
+    .gs_info{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
 }
