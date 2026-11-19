@@ -1,3 +1,168 @@
+.field{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:5rem;
+
+    padding:10rem 5%;
+
+    background:#05070d;
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+}
+.field-content{
+    max-width:700px;
+}
+.field h2{
+    font-size:7rem;
+    font-weight:300;
+    line-height:.9;
+    margin:2rem 0 1rem;
+}
+.field-label{
+    font-size:.8rem;
+
+    letter-spacing:.2rem;
+
+    color:#9ca3af;
+
+    margin-bottom:3rem;
+}
+.field-description{
+    font-size:0.95rem;
+    line-height:1.9;
+    color:#9ba1ad;
+    max-width:620px;
+}
+.field-divider{
+    margin:4rem 0;
+
+    height:1px;
+
+    background:#232734;
+}
+.field-card{
+    width: 420px;
+
+    padding: 2rem;
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 20px;
+
+    background: rgba(20, 24, 34, .7);
+
+    backdrop-filter: blur(10px);
+
+    position: relative;
+    margin-top:2rem;
+    height: auto;
+}
+.field-card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:2px;
+
+    border-radius:20px 20px 0 0;
+
+    background:linear-gradient(
+        to right,
+        #d5c525,
+        #2aa6ff,
+        #a830ff
+    );
+}
+.card-label{
+    display:block;
+
+    margin-bottom:2rem;
+
+    font-size:.75rem;
+
+    letter-spacing:.20rem;
+
+    color:#8f95a3;
+}
+
+.metric-row{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:1.5rem 0;
+
+    border-top:1px solid rgba(255,255,255,.08);
+}
+.metric-row span{
+    color:#a6acb8;
+
+    font-size:1rem;
+}
+.metric-row strong{
+    color:#ffffff;
+
+    font-size:1.7rem;
+    font-weight:400;
+    text-align:right;
+}
+.field-tag span{
+    color: rgb(175, 173, 173);
+}
+.field::before{
+    content:"";
+
+    position:absolute;
+
+    right:-220px;
+    top:50%;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    background: rgba(93,255,88,.18);
+
+    filter:blur(140px);
+
+    transform:translateY(-50%);
+}
+.field-header{
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+.field-icon{
+    width:36px;
+    height:8px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        to right,
+        #6dd85f,
+        #2a8cff
+    );
+}
+.field-footer{
+    font-size:.9rem;
+    line-height:1.7;
+    color:#707784;
+}
 .footer{
     background-color: black;
     color: grey;
