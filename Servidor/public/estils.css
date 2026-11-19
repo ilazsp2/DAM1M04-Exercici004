@@ -1,3 +1,90 @@
+.governance{
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 8rem 2rem;
+}
+.gov-title{
+    max-width: 900px;
+
+    font-size: 4.5rem;
+
+    line-height: .95;
+
+    color: #30353f;
+
+    margin: 30px 0;
+}
+.gov-subtitle{
+    max-width: 900px;
+
+    font-size: 1.8rem;
+
+    line-height: 1.5;
+
+    color: #6f7787;
+
+    margin-bottom: 60px;
+}
+.gov-cards{
+    display:flex;
+    gap:20px;
+
+    margin-top:60px;
+}
+.gov-card{
+    flex:1;
+
+    padding:40px;
+
+    min-height:260px;
+
+    border:1px solid #dddddd;
+    border-radius:20px;
+
+    background:#ffffff;
+
+    position:relative;
+
+    transition:all .25s ease;
+}
+.gov-card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:3px;
+
+    border-radius:20px 20px 0 0;
+}
+.blue::before{
+    background:#3da5ff;
+}
+
+.green::before{
+    background:#3bc16e;
+}
+
+.purple::before{
+    background:#a339ff;
+}
+
+.yellow::before{
+    background:#d5b400;
+}
+.gov-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.08);
+    border-color:#cfcfcf;
+}
+.gov-card h3{
 .atlas{
     max-width: 850px;
     padding: 120px 150px;
@@ -283,6 +370,8 @@
 
     gap:10px;
 }
+.gov-icon{
+    width:28px;
 .field-icon{
     width:36px;
     height:8px;
@@ -291,6 +380,27 @@
 
     background:linear-gradient(
         to right,
+        #64c557,
+        #3195ff
+    );
+}
+.gov-tag{
+    font-size:.8rem;
+
+    letter-spacing:.15rem;
+
+    color:#7b8291;
+}
+.gov-footer{
+    margin-top:4rem;
+
+    text-align:center;
+
+    font-size:0.8rem;
+
+    letter-spacing:0.2rem;
+
+    color:#959baa;
         #6dd85f,
         #2a8cff
     );
