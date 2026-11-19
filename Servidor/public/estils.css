@@ -1,3 +1,333 @@
+.governance{
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 8rem 2rem;
+}
+.gov-title{
+    max-width: 900px;
+
+    font-size: 4.5rem;
+
+    line-height: .95;
+
+    color: #30353f;
+
+    margin: 30px 0;
+}
+.gov-subtitle{
+    max-width: 900px;
+
+    font-size: 1.8rem;
+
+    line-height: 1.5;
+
+    color: #6f7787;
+
+    margin-bottom: 60px;
+}
+.gov-cards{
+    display:flex;
+    gap:20px;
+
+    margin-top:60px;
+}
+.gov-card{
+    flex:1;
+
+    padding:40px;
+
+    min-height:260px;
+
+    border:1px solid #dddddd;
+    border-radius:20px;
+
+    background:#ffffff;
+
+    position:relative;
+
+    transition:all .25s ease;
+}
+.gov-card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:3px;
+
+    border-radius:20px 20px 0 0;
+}
+.blue::before{
+    background:#3da5ff;
+}
+
+.green::before{
+    background:#3bc16e;
+}
+
+.purple::before{
+    background:#a339ff;
+}
+
+.yellow::before{
+    background:#d5b400;
+}
+.gov-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.08);
+    border-color:#cfcfcf;
+}
+.gov-card h3{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:2rem;
+
+    font-weight:400;
+
+    margin-bottom:25px;
+
+    color:#30353f;
+}
+.gov-card p{
+    color:#7b8291;
+
+    font-size:1rem;
+
+    line-height:1.7;
+}
+.card-dash{
+    color:#2193ff;
+}
+.green .card-dash{
+    color:#4bb96c;
+}
+
+.purple .card-dash{
+    color:#a02cff;
+}
+
+.yellow .card-dash{
+    color:#d9b100;
+}
+.gov-steps{
+    display:flex;
+
+    gap:30px;
+
+    margin-top:50px;
+}
+.gov-step{
+    flex:1;
+}
+.gov-step h4{
+    margin:0 0 0.8rem 0;
+
+    font-size:1rem;
+
+    font-weight:400;
+
+    color:#30353f;
+}
+.gov-step p{
+    margin:0;
+
+    font-size:0.9rem;
+
+    color:#7b8291;
+}
+.step-top{
+    display:flex;
+    align-items:center;
+
+    gap:0.8rem;
+
+    margin-bottom:1.5rem;
+}
+.step-top span{
+    font-size:0.75rem;
+
+    color:#8f95a3;
+
+    letter-spacing:0.1rem;
+}
+.step-line{
+    flex:1;
+
+    height:2px;
+}
+.gov-header{
+    display:flex;
+    align-items:center;
+
+    gap:10px;
+}
+.gov-icon{
+    width:28px;
+    height:8px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        to right,
+        #64c557,
+        #3195ff
+    );
+}
+.gov-tag{
+    font-size:.8rem;
+
+    letter-spacing:.15rem;
+
+    color:#7b8291;
+}
+.gov-footer{
+    margin-top:4rem;
+
+    text-align:center;
+
+    font-size:0.8rem;
+
+    letter-spacing:0.2rem;
+
+    color:#959baa;
+}
+.footer{
+    background-color: black;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+.footer a{
+    color: grey;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a:hover{
+    color: white;
+}
+.book {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.ver_plataforma {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid transparent;
+    line-height: 1;
+    text-wrap: nowrap;
+    text-decoration: none;
+    color: black;
+    transition: border-color .2s;
+}
+.ver_plataforma:hover {
+    border-bottom-color: black;
+    transition: transform .15s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
+
+}
+.ver_plataforma::after{
+    content: '→';
+    display: inline-block;
+    margin-left: 6px;
+    transition: transform .2s;
+}
+.ver_plataforma:hover::after{
+    transform: translateX(2px);
+}
+.gs{
+    padding: 120px 150px;
+    background:
+        radial-gradient(
+            circle at left center,
+            rgba(190,220,255,.4),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at right bottom,
+            rgba(255,180,190,.3),
+            transparent 30%
+        ),
+        #f7f6f3;
+}
+.gs_title{
+    font-size: 25.5px;
+    display: block;
+    unicode-bidi: isolate;
+    font-size: clamp(60px, 6vw, 90px);
+    line-height: 1.05;
+    font-weight: 500;
+    color: black;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+.gs_title_azul{
+    background: linear-gradient(
+        90deg,
+        #34d399,
+        #3b82f6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gs_subtitle{
+    font-size: clamp(18px, 1.5vw, 22px);
+    color: rgb(77, 76, 76);
+    max-width: 640px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.gs_info{
+    display:flex;
+    justify-content:space-between;
+    margin-top:50px;
+    gap:40px;
+    border-top: 1px solid #ddd;
+    padding-top: 35px;
+}
+.gs_info h4{
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #888;
+    font-weight: 600;
+}
+.gs_info div{
+    flex: 1;
+}
+.gs_barra{
+    width: 24px;
+    height: 4px;
+    border-radius: 999px;
+
+    background: linear-gradient(
+        90deg,
+        #51d46f,
+        #3498ff
+    );
+
+    margin-bottom: 12px;
+}
 nav {
     background-color: rgba(255, 255, 255, 0.99);
     left: 0;
@@ -7,6 +337,7 @@ nav {
     z-index: 2;
     box-sizing: border-box;
     display: flex;
+    padding: 0 150px;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgb(156, 156, 156);
@@ -17,7 +348,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 66px;
-    margin-left: 350px;
 }
 .nav-inner img {
     padding: 32px;
@@ -31,6 +361,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 28px;
+    padding: 0 50px;
 }
 
 .nav-links a {
@@ -47,7 +378,6 @@ nav {
     display: flex;
     align-items: center;
     gap: 14px;
-    margin-right: 350px;
 }
 
 .cajatext {
@@ -86,6 +416,7 @@ nav {
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  padding: 120px 150px;
   background:
     radial-gradient(ellipse at 80% 15%, #f3dce8, transparent 60%),
     radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%),
@@ -111,8 +442,6 @@ nav {
   position: relative;
   z-index: 1;
   margin-top: 100px;
-  margin-left: 20%;
-  margin-right: 35%;
 }
 
 .container h1 {
@@ -150,6 +479,121 @@ nav {
     margin-top: 80px;
     border: 1px solid;
     border-radius: 14px;
+}
+
+.plat {
+    padding: 120px 150px;
+}
+
+.plat h2 {
+    margin-bottom: 28px;
+    font-size: 40px;
+}
+
+span {
+    color: rgb(110, 108, 108);
+}
+
+.targetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 14px;
+  line-height: 22.4px;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.targetas > .element {
+  color: rgb(96, 96, 96);
+  min-width: 30px;
+  flex: 1 1 200px;
+}
+
+.element > .at {
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    line-height: 16.8px;
+    text-align: center;
+    border: 1px solid rgb(166, 250, 163);
+    background: linear-gradient(rgb(166, 250, 163), rgb(255,255,255));
+}
+
+.element > .nex {
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    line-height: 16.8px;
+    text-align: center;
+    border: 1px solid rgb(164, 163, 250);
+    background: linear-gradient(rgb(164, 163, 250), rgb(255,255,255));
+}
+
+.element > .can {
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    line-height: 16.8px;
+    text-align: center;
+    border: 1px solid rgb(223, 173, 252);
+    background: linear-gradient(rgb(223, 173, 252), rgb(255,255,255));
+}
+
+.element p {
+    font-size: 15px;
+}
+.element h3 {
+    font-size: 30px;
+}
+.targetas .black {
+    color: #000;
+}
+
+.targetas > .core {
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    line-height: 16.8px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(197, 197, 197);
+    background: linear-gradient(rgb(197, 197, 197), rgb(255,255,255));
+    color: rgb(96, 96, 96);
+    min-width: 30px;
+    flex: 1 1 200px;
+    gap: 32px
+}
+
+.core h3{
+    font-size: 22px
+}
+
+.core p{
+    font-size: 15px;
+}
+
+.mensaje {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 320px;
+    background: radial-gradient(rgb(255,255,255),rgb(255,255,255),rgb(139, 222, 255))
+}
+
+.mensaje .greyr {
+    color: rgb(96, 96, 96);
 }
 
 @media (max-width: 767px), (prefers-reduced-motion: reduce) {
