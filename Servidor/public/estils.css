@@ -162,6 +162,138 @@
     font-size:.9rem;
     line-height:1.7;
     color:#707784;
+.workflows{
+    padding: 150px 5%;
+    background-color: #f2efe8;
+}
+
+.workflows span{
+    font-size: .8rem;
+    letter-spacing: 3px;
+    color: #7b8291;
+}
+
+.work_title{
+    margin-top: 25px;
+
+    max-width: 1000px;
+
+    font-size: 5rem;
+
+    line-height: .95;
+
+    color: #30353f;
+}
+
+.work_subtitle{
+    margin-top: 35px;
+
+    max-width: 900px;
+
+    font-size: 1.8rem;
+
+    line-height: 1.5;
+
+    color: #7b8291;
+}
+.workflow-content{
+    flex: 1;
+    max-width: 580px;
+}
+.workflow-content h3{
+    margin: 0 0 .8rem 0;
+
+    font-size: 1.1rem;
+
+    font-weight: 400;
+
+    color: #30353f;
+}
+.workflow-content p{
+    margin: 0;
+
+    max-width: 580px;
+
+    font-size: .95rem;
+
+    line-height: 1.8;
+
+    color: #7b8291;
+}
+.workflow-tag{
+    width: 115  px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.35rem 0.8rem;
+
+    border: 1px solid #e2bb84;
+    border-radius: 999px;
+
+    color: #d48b2e;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+.workflow-list{
+    margin-top: 6rem;
+
+    border-bottom: 1px solid #d8d4ce;
+}
+.workflow-item{
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 8rem;
+
+    padding: 3rem 0;
+
+    border-top: 1px solid #d8d4ce;
+}
+.workflow-item::before{
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 2px;
+    height: 100%;
+
+    background: linear-gradient(
+        to bottom,
+        #37d26a,
+        #2080ff
+    );
+
+    opacity: 0;
+
+    transition: opacity .25s ease;
+}
+.workflow-item:hover::before{
+    opacity: 1;
+}
+.workflow-arrow{
+    margin-left: auto;
+
+    font-size: 1.3rem;
+
+    color: #69707d;
+
+    opacity: 0;
+
+    transition: opacity .25s ease;
+}
+.workflow-item:hover .workflow-arrow{
+    opacity: 1;
 }
 .footer{
     background-color: black;
