@@ -84,7 +84,7 @@
     0 20px 40px rgba(0,0,0,.08);
     border-color:#cfcfcf;
 }
-.gov-card h3{
+
 .atlas{
     max-width: 850px;
     padding: 120px 150px;
@@ -222,6 +222,7 @@
 .node-confirmed{
     font-size:.9rem;
     color:#24a148;
+}
 .field{
     display:flex;
 
@@ -372,6 +373,7 @@
 }
 .gov-icon{
     width:28px;
+}
 .field-icon{
     width:36px;
     height:8px;
@@ -401,14 +403,12 @@
     letter-spacing:0.2rem;
 
     color:#959baa;
-        #6dd85f,
-        #2a8cff
-    );
 }
 .field-footer{
     font-size:.9rem;
     line-height:1.7;
     color:#707784;
+}
 .workflows{
     padding: 150px 5%;
     background-color: #f2efe8;
