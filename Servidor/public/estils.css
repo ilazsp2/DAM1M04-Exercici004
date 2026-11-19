@@ -1,3 +1,140 @@
+.atlas{
+    max-width: 850px;
+    padding: 120px 150px;
+}
+.atlas_textito{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.atlas h2 {
+    font-size: 5.5rem;
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    color: #2f3440;
+
+    max-width: 850px;
+
+    margin-bottom: 2rem;
+}
+.atlas-steps{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+
+    margin-top:80px;
+}
+
+.step{
+    flex:1;
+}
+
+.step .line{
+    width:100%;
+    height:2px;
+
+    background:#30353f;
+
+    margin-bottom:25px;
+}
+
+.step h3{
+    font-size:2rem;
+
+    color:#30353f;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+}
+
+.step p{
+    font-size:1rem;
+
+    color:#757c89;
+
+    line-height:1.4;
+
+    max-width:240px;
+}
+.atlas-message{
+    margin-top:80px;
+
+    max-width:750px;
+
+    font: size 1.3rem;
+
+    line-height:1.5;
+
+    font-weight:400;
+
+    color:#30353f;
+}
+.editable-nodes{
+    max-width:500px;
+}
+
+.editable-nodes h4{
+    font-size:.8rem;
+    letter-spacing:3px;
+    color:#6b7280;
+
+    margin-bottom:20px;
+}
+
+.nodes-container{
+    display:flex;
+    gap:15px;
+}
+
+.node{
+    flex:1;
+
+    padding:20px;
+
+    border:1px solid #84c89b;
+    border-radius:15px;
+
+    background:white;
+}
+.node-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:.8rem;
+    font-weight:600;
+
+    color:#6b7280;
+
+    margin-bottom:18px;
+}
+.dot{
+    width:9px;
+    height:9px;
+
+    border-radius:50%;
+
+    background:#24a148;
+
+    display:inline-block;
+}
+.node-description{
+    font-size:1.1rem;
+
+    line-height:1.4;
+
+    color:#353535;
+
+    margin-bottom:25px;
+}
+.node-confirmed{
+    font-size:.9rem;
+    color:#24a148;
 .field{
     display:flex;
 
