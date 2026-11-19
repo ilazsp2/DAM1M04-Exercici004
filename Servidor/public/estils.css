@@ -135,6 +135,302 @@
 .node-confirmed{
     font-size:.9rem;
     color:#24a148;
+.field{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:5rem;
+
+    padding:10rem 5%;
+
+    background:#05070d;
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+}
+.field-content{
+    max-width:700px;
+}
+.field h2{
+    font-size:7rem;
+    font-weight:300;
+    line-height:.9;
+    margin:2rem 0 1rem;
+}
+.field-label{
+    font-size:.8rem;
+
+    letter-spacing:.2rem;
+
+    color:#9ca3af;
+
+    margin-bottom:3rem;
+}
+.field-description{
+    font-size:0.95rem;
+    line-height:1.9;
+    color:#9ba1ad;
+    max-width:620px;
+}
+.field-divider{
+    margin:4rem 0;
+
+    height:1px;
+
+    background:#232734;
+}
+.field-card{
+    width: 420px;
+
+    padding: 2rem;
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 20px;
+
+    background: rgba(20, 24, 34, .7);
+
+    backdrop-filter: blur(10px);
+
+    position: relative;
+    margin-top:2rem;
+    height: auto;
+}
+.field-card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:2px;
+
+    border-radius:20px 20px 0 0;
+
+    background:linear-gradient(
+        to right,
+        #d5c525,
+        #2aa6ff,
+        #a830ff
+    );
+}
+.card-label{
+    display:block;
+
+    margin-bottom:2rem;
+
+    font-size:.75rem;
+
+    letter-spacing:.20rem;
+
+    color:#8f95a3;
+}
+
+.metric-row{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:1.5rem 0;
+
+    border-top:1px solid rgba(255,255,255,.08);
+}
+.metric-row span{
+    color:#a6acb8;
+
+    font-size:1rem;
+}
+.metric-row strong{
+    color:#ffffff;
+
+    font-size:1.7rem;
+    font-weight:400;
+    text-align:right;
+}
+.field-tag span{
+    color: rgb(175, 173, 173);
+}
+.field::before{
+    content:"";
+
+    position:absolute;
+
+    right:-220px;
+    top:50%;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    background: rgba(93,255,88,.18);
+
+    filter:blur(140px);
+
+    transform:translateY(-50%);
+}
+.field-header{
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+.field-icon{
+    width:36px;
+    height:8px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        to right,
+        #6dd85f,
+        #2a8cff
+    );
+}
+.field-footer{
+    font-size:.9rem;
+    line-height:1.7;
+    color:#707784;
+.workflows{
+    padding: 150px 5%;
+    background-color: #f2efe8;
+}
+
+.workflows span{
+    font-size: .8rem;
+    letter-spacing: 3px;
+    color: #7b8291;
+}
+
+.work_title{
+    margin-top: 25px;
+
+    max-width: 1000px;
+
+    font-size: 5rem;
+
+    line-height: .95;
+
+    color: #30353f;
+}
+
+.work_subtitle{
+    margin-top: 35px;
+
+    max-width: 900px;
+
+    font-size: 1.8rem;
+
+    line-height: 1.5;
+
+    color: #7b8291;
+}
+.workflow-content{
+    flex: 1;
+    max-width: 580px;
+}
+.workflow-content h3{
+    margin: 0 0 .8rem 0;
+
+    font-size: 1.1rem;
+
+    font-weight: 400;
+
+    color: #30353f;
+}
+.workflow-content p{
+    margin: 0;
+
+    max-width: 580px;
+
+    font-size: .95rem;
+
+    line-height: 1.8;
+
+    color: #7b8291;
+}
+.workflow-tag{
+    width: 115  px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.35rem 0.8rem;
+
+    border: 1px solid #e2bb84;
+    border-radius: 999px;
+
+    color: #d48b2e;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+.workflow-list{
+    margin-top: 6rem;
+
+    border-bottom: 1px solid #d8d4ce;
+}
+.workflow-item{
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 8rem;
+
+    padding: 3rem 0;
+
+    border-top: 1px solid #d8d4ce;
+}
+.workflow-item::before{
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 2px;
+    height: 100%;
+
+    background: linear-gradient(
+        to bottom,
+        #37d26a,
+        #2080ff
+    );
+
+    opacity: 0;
+
+    transition: opacity .25s ease;
+}
+.workflow-item:hover::before{
+    opacity: 1;
+}
+.workflow-arrow{
+    margin-left: auto;
+
+    font-size: 1.3rem;
+
+    color: #69707d;
+
+    opacity: 0;
+
+    transition: opacity .25s ease;
+}
+.workflow-item:hover .workflow-arrow{
+    opacity: 1;
 }
 .footer{
     background-color: black;
@@ -517,6 +813,19 @@ span {
 
 .core p{
     font-size: 15px;
+}
+
+.mensaje {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 320px;
+    background: radial-gradient(rgb(255,255,255),rgb(255,255,255),rgb(139, 222, 255))
+}
+
+.mensaje .greyr {
+    color: rgb(96, 96, 96);
 }
 
 @media (max-width: 767px), (prefers-reduced-motion: reduce) {
